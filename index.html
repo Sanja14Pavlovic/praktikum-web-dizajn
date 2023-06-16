@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoGallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+<body>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid wrapper">
+              <a class="navbar-brand" href="index.html">Foto<span class="logo">Gallery</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Foto<span>Gallery</span></h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Galerija</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Više informacija
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="about.html">Usluge</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Kontakt</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="author.html">O autoru</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          
+
+    <div class="container-fluid padding">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="styles/images/slajd-1.jpg" class="d-block w-100 slider-img" alt="slide-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="w h2">Dobrodošli u Foto<span class="ss">Gallery</span></h5>
+                  <p class="w h5">Uživajte u nekim našim fotografijama!</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="styles/images/slajd-2.jpg" class="d-block w-100 slider-img" alt="slide-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="w h2">Foto<span>Gallery</span></h5>
+                  <p class="w h5">Naručite slikanje i uživajte u stvaranju magije sa nama!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="styles/images/slajd-3.jpg" class="d-block w-100 slider-img" alt="slide-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="w h2">Foto<span class="s">Gallery</span></h5>
+                  <p class="w h5">Najpovoljnije fotografisanje i najprofesionalniji tim samo kod nas!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Prethodni</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Sledeći</span>
+            </button>
+          </div>
+    </div>
+<div class="text-bg-dark p-3">
+    <div class="container-fluid wrapper">
+        <div class="h1 text-center  text-pocetna">Naše usluge</div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 padd-top">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-center h3">Pravimo foto-albume</h5>
+                  <p class="card-text ">Dobrodošli u Foto<span>Gallery</span>, gde stvaramo predivne uspomene koje traju čitav život! 
+                    Naša strast je da vam pomognemo da oživite vaše najdraže trenutke i da ih pretvorimo u jedinstvene foto-albume 
+                    koji će vas uvek podsećati na srećne trenutke koje ste proveli. Pogledajte našu galeriju na sajtu kako biste dobili ideje i inspiraciju
+                    za svoj budući foto-album. Takođe, tu smo da vam pružimo stručne savete i pomoć pri odabiru najboljih slika i rasporeda za vaš album.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-center h3">Pravimo kratke filmove</h5>
+                  <p class="card-text">Pružamo nezaboravno iskustvo snimanja kratkih filmova koji će oživeti vaše najdragocenije trenutke! Naša strast 
+                    je da pretvorimo vaše priče u magične vizuelne obrasce koje ćete sa ponosom deliti sa svojim najbližima. Kreativnost je srce našeg procesa. 
+                    Sve počinje razgovorom sa vama, gde ćemo saznati vaše želje, inspiraciju i priče koje želite da ispričate. Naš tim će zatim pažljivo
+                    osmisliti scenario i režiju kako bi se postigao željeni efekat. Bilo da želite romantičnu bajku, dinamični putopis ili iskrenu priču o porodici,
+                    mi ćemo vam pomoći da ostvarite svoju viziju.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-center h3">Profesionalno fotografisanje</h5>
+                  <p class="card-text">Naša foto-radnja je dom stručnjaka za fotografiju koji su posvećeni snimanju vaših najvažnijih trenutaka sa stilom, 
+                    kreativnošću i veštinom. U Foto<span>Gallery</span>, fokusiramo se na vas i vaše želje. Pre svakog slikanja, sastajemo se s vama kako bismo razgovarali o
+                    vašim idejama, stilu i očekivanjima. Naš cilj je da shvatimo vašu jedinstvenu priču i da je prenesemo kroz slike. Sa pažljivo odabranom opremom 
+                    i tehnikama, garantujemo da će svaki kadar biti profesionalan, estetski privlačan i dočaravajući.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+<div class="bg-dark">
+  <div class="container wrapper customer-cards">
+    <div class="h1 text-white customer-text text-center">
+      Utisci naših kupaca
+    </div>
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="styles/images/cus-1.jpg" class="card-img-top" alt="customers">
+          <div class="card-body">
+            <p class="card-text">
+              Mi, Nemanja i Nevena, želimo da podelimo naše izuzetno pozitivno iskustvo u poseti FotoGallery foto radnji. 
+              Prvo što nam je privuklo pažnju bio je impresivan izbor foto opreme koji ste imali na raspolaganju. Od profesionalnih
+              kamera do objektiva i dodatne opreme, bili smo oduševljeni širinom i kvalitetom vaše ponude. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="styles/images/cus-2.jpg" class="card-img-top" alt="customers">
+          <div class="card-body">
+            <p class="card-text">
+              Nemanja ovde, imam samo reči hvale za Foto<span>Gallery</span>! Kao zaljubljenik u fotografiju,
+              poseta voj radnji bila je zaista nezaboravno iskustvo. Dočekala me prijatna atmosfera i srdačan osmeh osoblja.
+              Njihova stručnost i iskustvo bili su očigledni, a njihova ljubaznost zaista me je impresionirala.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="styles/images/cus-3.jpg" class="card-img-top" alt="customers">
+          <div class="card-body">
+            <p class="card-text">
+              Ćao Sofija ovde, kao strastveni ljubitelj fotografije, posetila sam Foto<span>Gallery</span> i bilo je zaista očaravajuća. Od samog trenutka kada sam
+              prešla prag, osetila samljubaznost koja me dočekala.Unutar radnje, iznenadila me je izuzetno široka paleta foto 
+              opreme. Bila sam impresionirana izborom kamera, objektiva i dodatne opreme koji su bili dostupni.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="styles/images/cus-4.jpg" class="card-img-top" alt="customers">
+          <div class="card-body">
+            <p class="card-text">
+              Ćao, Anastasija ovde. Nemam reči koliko sam oduševljena posetom Foto<span>Gallery</span>! Ovo iskustvo je bilo zaista inspirativno i 
+              nezaboravno.Osoblje je bilo izuzetno susretljivo i spremno da pruži pomoć. Njihova stručnost i iskustvo bili su primetni u svakom trenutku.
+              Bili su spremni da odgovore na sva moja pitanja, takođe, cenim njihovu strpljivost i pažnju koju su mi posvetili.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Meni</h4>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="gallery.html">Galerija</a></li>
+            <li><a href="about.html">Usluge</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="author.html">O autoru</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>O autoru</h4>
+          <ul>
+            <li>Sanja Pavlović</li>
+            <li>12/21</li>
+            <li>Praktikum web dizajn</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kratko o nama</h4>
+          <div class="h6 foot-text">
+            Fotografisanje je umetnost koja se temelji na snimanju i dieljenju vizualnih priča. 
+              Strast prema fotografisanju je duboko ukorenjena želja za beženjem trenutaka, izražavanjem kreativnosti 
+              i prenošenjem emocija.Fotografi koji neguju strast prema ovom hobiju ili zanimanju neprestano
+               traže inspiraciju u svetu oko sebe.
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Zapratite nas</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=sr"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
